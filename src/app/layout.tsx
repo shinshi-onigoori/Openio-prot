@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { JotaiProvider } from "@/components/providers/jotai-provider";
+import { Modals } from "@/components/modals";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Modals />
             {children}
           </ThemeProvider>
         </JotaiProvider>
