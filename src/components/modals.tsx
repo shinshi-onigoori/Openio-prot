@@ -4,17 +4,17 @@ import { AuthModal } from "@/feature/auth/components/auth-modal";
 import { useEffect, useState } from "react";
 
 export const Modals = () => {
-    const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-    useEffect(()=>{
-        setMounted(true);
-    }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if(!mounted) return null;
+  if (!mounted) return null;
 
-    return (
-        <>
-          <AuthModal />
-        </>
-    )
-}
+  return (
+    <>
+      <AuthModal />
+    </>
+  );
+};
