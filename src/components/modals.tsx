@@ -13,8 +13,8 @@ export const Modals = () => {
   if (!mounted) return null;
 
   return (
-    <>
+    <div className="h-full py-24">
       <AuthModal />
-    </>
+    </div>
   );
 };
